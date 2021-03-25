@@ -1,0 +1,54 @@
+<html>
+    <head >     
+    <meta charset="UTF-8">       
+        <title>Portàtils</title>
+</head>
+
+<script type="text/javascript" src="./form.js"></script>
+<link href="form.css" rel="stylesheet" type="text/css">
+			
+        <body>
+			<!-- Cabecera con el titulo Portàtils-->
+					<center class="h1"><h1 class="titulo">Portàtils</h1></center>
+						<section class="section_item flex-container color-2">
+							<center>
+								<!-- Creamos el formulario con todos sus inputs y datos necessarios.-->
+ 								<form class="form">
+   									<p> Marca: <input type="text" id="marca" name ="marca"/>
+   
+   									 Model:<input type="text" id="model" name= "model" />
+
+   									CPU: <input type="text" id="cpu" name="cpu" />
+
+   									RAM:<input type="number" id="ram" name="ram"/>
+
+   									Tipus disc dur: <input type="text" id="discdur" name="discdur"/>
+
+   									Capacitat disc dur: <input type="number" id="capacitat" name="capacitat"/>
+
+   									Mida de la pantalla:<input type="number" id="mida" name="mida"/></p>
+								<!-- Creamos un boton para enviar los datos del formulario que ejecutara 
+									la funcion guardarDades() y guardara toda la información introducida-->
+   									<button class="boton_personalizado"  onclick="guardarDades()">Enviar dades portatil</button>
+   
+   
+   					
+								 </form>
+								 <!-- Cerramos el formulario-->
+				<!-- Creamos un parrafo con un id y una classe donde mostraremos los datos guardados en el sessionStorage -->
+				<p class="datos" id="dades"></p>
+				<!-- Boton para mostrar el último portàtil que ejecutara la funcion mostrardatos()-->
+                <button class="boton_personalizado" onclick="mostrardatos()">Mostrar últim portatil</button><br><br>
+
+                <!-- Boton que llama a la función eliminarlocalstorage() para eliminar los datos guardados.-->
+				<button class="boton_personalizado" type="button" onclick="eliminarlocalstorage()"> Eliminar</button><br><br>
+				<!-- Boton que ejecutara al darle click la función recargar() y recargara la página.-->
+                <button onclick="recargar()">Recargar</button><br>
+							</center>
+						</section>
+
+			</body>
+</html>
+
+
+       
